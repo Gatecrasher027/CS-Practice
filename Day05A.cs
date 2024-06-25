@@ -1,32 +1,3 @@
-1. What type would you choose for the following “numbers”?
-A person’s telephone number: String
-A person’s height: Float
-A person’s age: int
-A person’s gender (Male, Female, Prefer Not To Answer): String
-A person’s salary: decimal or float
-A book’s ISBN: string
-A book’s price: float
-A book’s shipping weight: float or double
-A country’s population: long
-The number of stars in the universe: ulong
-The number of employees in each of the small or medium businesses in the
-United Kingdom (up to about 50,000 employees per business): int
-2. What are the difference between value type and reference type variables? What is
-boxing and unboxing?
-  Value type variables store the actual data whereas the reference type variables store the reference to the objects they may refer to. 
-  Value type variables are stored in the stack whereas reference types are stored in the heap section.
-  Examples of value type: int, bool, char. Examples of reference type: array, class
-  Boxing is converting value type variable to reference type. Example: int i = 20; object o = i;
-  Unboxing is converting a reference type variable to a value type. Example: object o = 20; int i = (int)o;
-3. What is meant by the terms managed resource and unmanaged resource in .NET
-  Managed resources are those that are managed by the .NET runtime's garbage collector.
-  Examples: instances of classes, arrays.
-  Unmanaged resources are those that are not managed by the garbage collector.
-  Examples: file handles, database connections.
-4. Whats the purpose of Garbage Collector in .NET?
-  The Garbage Collector (GC) in .NET handles automatic memory management by reclaiming memory used by objects that are no longer in use, thereby preventing memory leaks. 
-  It tracks object references and periodically frees up memory that is no longer accessible, optimizing the allocation and deallocation of memory in managed applications.
-
 Practice number sizes and ranges
 using System;
 
@@ -58,38 +29,6 @@ long microseconds = milliseconds * 1000;
 long nanoseconds = microseconds * 1000;
 Console.WriteLine($"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes = {seconds} seconds = {milliseconds} milliseconds = {microseconds} microseconds = {nanoseconds} nanoseconds");
 
-Controlling Flow and Converting Types
-Test your Knowledge
-1. What happens when you divide an int variable by 0?
-  If we divide an int variable by 0 it results in a System.DivideByZeroException. 
-2. What happens when you divide a double variable by 0?
-  Dividing double by 0 results in (Infinity or -Infinity) depending on the sign of the numerator. If both the numerator and denominator are zero, the result is NaN.
-3. What happens when you overflow an int variable, that is, set it to a value beyond its
-range?
-  When an int variable overflows, it takes the minimum value. For example, if you increment int.MaxValue by 1, it becomes int.MinValue. If overflow checking is enabled, a System.OverflowException is thrown.
-4. What is the difference between x = y++; and x = ++y;?
-  x = y++ is (Post-increment) which means that the current value of y is assigned to x, then y is incremented by 1.
-  x = ++y is (Pre-increment) which means that y is incremented by 1, then the new value of y is assigned to x.
-5. What is the difference between break, continue, and return when used inside a loop
-statement?
-  break: Exits the loop or switch statement immediately.
-  continue: Skips the remaining code in the current iteration of the loop and moves to the next iteration.
-  return: Exits the current method and optionally returns a value to the caller, ending the loop and any further execution of the method.
-6. What are the three parts of a for statement and which of them are required?
-  The three parts of a for statement are:
-  Initialization (int i = 0)
-  Condition (i < 5)
-  Iteration (i++)
-  Only the condition part is required. If omitted, the loop runs indefinitely. The initialization and iteration parts are optional but used for clarity and control of the loop.
-7. What is the difference between the = and == operators?
-  The = operator is the assignment operator, used to assign a value to a variable.
-  The == operator is the equality operator, used to compare two values for equality.
-8. Does the following statement compile? for ( ; true; ) ;
-  Yes, the statement compiles. It represents an infinite loop because the condition true always evaluates to true.
-9. What does the underscore _ represent in a switch expression?
-  The underscore _ in a switch expression represents a default case. It matches any value that has not been matched by previous case patterns.
-10. What interface must an object implement to be enumerated over by using the foreach statement?
-  To be enumerated over by using the foreach statement, an object must implement the IEnumerable interface or IEnumerable<T> interface for collections.
 
 Practice Loops and Operators
 using System;
