@@ -1,4 +1,4 @@
-Practice number sizes and ranges
+//Practice number sizes and ranges
 using System;
 
 Console.WriteLine($"The sbyte type uses {sizeof(sbyte)} byte(s) in memory and has a range from {sbyte.MinValue} to {sbyte.MaxValue}."); 
@@ -13,7 +13,7 @@ Console.WriteLine($"The float type uses {sizeof(float)} byte(s) in memory and ha
 Console.WriteLine($"The double type uses {sizeof(double)} byte(s) in memory and has a range from {double.MinValue} to {double.MaxValue}."); 
 Console.WriteLine($"The decimal type uses {sizeof(decimal)} byte(s) in memory and has a range from {decimal.MinValue} to {decimal.MaxValue}.");
 
-Conversion of Integer Centuries to years, months, days, etc.
+//Conversion of Integer Centuries to years, months, days, etc.
 
 using System;
 
@@ -30,7 +30,7 @@ long nanoseconds = microseconds * 1000;
 Console.WriteLine($"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes = {seconds} seconds = {milliseconds} milliseconds = {microseconds} microseconds = {nanoseconds} nanoseconds");
 
 
-Practice Loops and Operators
+//Practice Loops and Operators
 using System;
 for (int i = 1; i <= 100; i++)
 {
@@ -52,10 +52,10 @@ for (int i = 1; i <= 100; i++)
     }
 }
 
-What will happen if this code executes?
+/*What will happen if this code executes?
   The loop prints numbers from 0 to 255 and then starts again from 0, printing indefinitely due to the overflow.
 What code could you add (don’t change any of the preceding code) to warn us about the
-problem?
+problem?*/
   int max = 500;
   for (byte i = 0; i < max; i++)
   {
@@ -66,9 +66,9 @@ problem?
           break;
       }
   }
-  This will break the loop when i becomes 256 and give a warning.
+//  This will break the loop when i becomes 256 and give a warning.
 
-Random Number Generator and Guess the Number
+//Random Number Generator and Guess the Number
 
   int correctNumber = new Random().Next(3) + 1;        
   Console.WriteLine("Guess the number (between 1 and 3):");
@@ -90,7 +90,7 @@ Random Number Generator and Guess the Number
       Console.WriteLine("Correct number.");
   }
 
-Print-a-Pyramid
+//Print-a-Pyramid
 
 using System;
 Console.Write("Number of lines for the pyramid: ");
@@ -108,7 +108,7 @@ for (int i = 1; i <= lines; i++)
     Console.WriteLine();
 }
 
-3. Write a program that generates a random number between 1 and 3....
+/*3. Write a program that generates a random number between 1 and 3....
   Already done above.
 
 4. Write a program that defines a variable representing birthdate and calculates
@@ -116,7 +116,7 @@ how many days old the person with that birth date is currently.
 For extra credit, output the date of their next 10,000 day (about 27 years) anniversary.
 Note: once you figure out their age in days, you can calculate the days until the next
 anniversary using int daysToNextAnniversary = 10000 - (days % 10000);
-
+*/
   using System;
   Console.Write("Enter your birth date (yyyy-mm-dd): ");
   DateTime birthDate = DateTime.Parse(Console.ReadLine());
@@ -127,7 +127,7 @@ anniversary using int daysToNextAnniversary = 10000 - (days % 10000);
   Console.WriteLine($"You are {ageInDays} days old.");
   Console.WriteLine($"Your next 10,000-day anniversary will be on {nextAnniversaryDate.ToShortDateString()}.");
 
-5. Write a program that greets the user using the appropriate greeting for the time of day.
+/*5. Write a program that greets the user using the appropriate greeting for the time of day.
 Use only if , not else or switch , statements to do so. Be sure to include the following
 greetings:
 "Good Morning"
@@ -139,7 +139,7 @@ greetings. If you need a refresher on how to get the current time, see DateTime
 Formatting. When testing your program, you'll probably want to use a DateTime variable
 you define, rather than the current time. Once you're confident the program works
 correctly, you can substitute DateTime.Now for your variable (or keep your variable and just
-assign DateTime.Now as its value, which is often a better approach)
+assign DateTime.Now as its value, which is often a better approach)*/
 
   using System;
   DateTime currentTime = DateTime.Now;
@@ -161,12 +161,12 @@ assign DateTime.Now as its value, which is often a better approach)
       Console.WriteLine("Good Night");
   }
 
-6. Write a program that prints the result of counting up to 24 using four different increments.
+/*6. Write a program that prints the result of counting up to 24 using four different increments.
 First, count by 1s, then by 2s, by 3s, and finally by 4s.
 Use nested for loops with your outer loop counting from 1 to 4. You inner loop should
 count from 0 to 24, but increase the value of its /loop control variable/ by the value of the /
 loop control variable/ from the outer loop. This means the incrementing in the /
-afterthought/ expression will be based on a variable.
+afterthought/ expression will be based on a variable.*/
 
   using System;
   for (int increment = 1; increment <= 4; increment++)
