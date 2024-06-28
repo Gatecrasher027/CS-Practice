@@ -1,0 +1,31 @@
+1. Describe the problem generics address.
+  To increase performance, type safety, and code reuse, generic types are utilized. Generics are most commonly used in collection class creation. 
+  Without generics, programmers frequently have to utilize less type-safe collections like ArrayList, which store elements as objects, or write the same code repeatedly to handle different data types. 
+  Runtime errors resulting from type mismatches may arise from this. Generics enable the development of methods and collections that are type-safe and capable of handling any kind of data.
+
+2. How would you create a list of strings, using the generic List class?
+  List<string> addresses = new List<string>();
+
+3. How many generic type parameters does the Dictionary class have?
+  The dictionary class has 2 generic type parameters, Key and Value (Key-Value pair).
+
+4. True/False. When a generic class has multiple type parameters, they must all match.
+  False. A generic class with multiple parameters can have different type parameters. As we have seen in previous example: Dictionary<int, string> has parameters of type int and string.
+
+5. What method is used to add items to a List object?
+  The Add method is used to add items to a List object. For example: addresses.Add("211 Main St");
+
+6. Name two methods that cause items to be removed from a List.
+  Remove and RemoveAt can be used to remove items from a list (Remove for removing first occurence of the item and RemoveAt to remove the item at a specific index).
+
+7. How do you indicate that a class has a generic type parameter?
+  Similar to a regular class, a generic class is defined by appending a list of type parameters in angle brackets <...> to the class name and specifying the type parameter(s) inside the brackets.
+
+8. True/False. Generic classes can only have one generic type parameter.
+  False. Generic classes can have multiple generic type parameters.
+
+9. True/False. Generic type constraints limit what can be used for the generic type.
+  True. Constraints limit the generic type to be a reference type, value type, implement a specific interface, or have a parameterless constructor.
+
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+  True. For example: If you constrain a generic type to a specific interface you can use the methods defined in that interface.
