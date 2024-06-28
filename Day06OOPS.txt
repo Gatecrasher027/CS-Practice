@@ -28,4 +28,14 @@
   They are perfect for situations where you need to store and manage data without worrying about it being modified. Two record instances with the same data are considered equal, simplifying comparisons.
 
 7. What does overloading and overriding mean?
-  
+  Overloading allows to define multiple methods with the same name but different parameters within the same class enabling different ways to call a method. Overriding is used in inheritance to provide    a new implementation for a method in a derived class that is already defined in the base class. In this, the methods have the same name as well as the same parameters.
+
+8. What is the difference between a field and a property?
+  A field is a variable that is declared directly in a class. Fields hold data or state for an object. Example: public string address;
+  A property is a member that provides a flexible mechanism to read, write, or calculate the value of a private field. Properties include logic for getting and setting values.
+
+9. How do you make a method parameter optional?
+  By providing a default value for it in the method definition.
+  Example: public void Doit(string message = "Do it")
+
+10. 
