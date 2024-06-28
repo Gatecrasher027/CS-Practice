@@ -38,4 +38,48 @@
   By providing a default value for it in the method definition.
   Example: public void Doit(string message = "Do it")
 
-10. 
+10. What is an interface and how is it different from abstract class?
+An interface contains definitions for a group of related functionalities that a non-abstract class or a struct must implement.
+Interfaces cannot contain any implementation whereas abstract classes can have both abstract and concrete methods.
+A class can implement multiple interfaces but it can inherit only one abstract class.
+
+11. What accessibility level are members of an interface?
+Interface members are public by default because the purpose of an interface is to enable other types to access a class.
+
+12. True/False. Polymorphism allows derived classes to provide different implementations of the same method.
+True
+
+13. True/False. The override keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.
+True
+
+14. True/False. The new keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.
+False. That is the function of the override keyword.
+
+15. True/False. Abstract methods can be used in a normal (non-abstract) class. 
+False. Abstract methods can only be declared in abstract classes.
+
+16. True/False. Normal (non-abstract) methods can be used in an abstract class. 
+True.
+
+17. True/False. Derived classes can override methods that were virtual in the base class. 
+True. Using the override keyword.
+
+18. True/False. Derived classes can override methods that were abstract in the base class. 
+True.
+
+19. True/False. In a derived class, you can override a method that was neither virtual non abstract in the base class.
+False.
+
+20. True/False. A class that implements an interface does not have to provide an implementation for all of the members of the interface.
+False. It has to implement all the members of the interface.
+
+21. True/False. A class that implements an interface is allowed to have other members that aren’t defined in the interface.
+True. It can have additional members.
+
+22. True/False. A class can have more than one base class.
+False. A class can inherit from only one base class.
+
+23. True/False. A class can implement more than one interface.
+True. It can implement multiple interfaces.
