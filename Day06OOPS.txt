@@ -1,0 +1,31 @@
+1. What are the six combinations of access modifier keywords and what do they do? 
+  In C#, there are six combinations of access modifier keywords that control the visibility and accessibility of members and types. 
+  The public modifier makes members accessible from any other code, both within and outside the assembly. 
+  The private modifier restricts access to within the body of the class or struct where it is declared. 
+  The protected modifier allows access within its class and by derived class instances, facilitating inheritance while keeping members hidden from other classes. 
+  The internal modifier limits access to within the same project, making it useful for application-wide usage without exposing members to other applications. 
+  The protected internal modifier combines protected and internal, making members accessible within its class, derived classes, and any class in the same project. 
+  The private protected modifier restricts access to within its class or derived classes that are in the same project, combining private and protected access to enhance security within a single assembly and its inheritance hierarchy.
+
+2. What is the difference between the static, const, and readonly keywords when applied to a type member?
+  The static keyword makes a member belong to the class itself rather than to any specific instance, meaning it can be accessed without creating an instance of the class. 
+  The const keyword defines a constant field or local variable that must be initialized at the time of declaration and cannot be changed thereafter, ensuring its value remains the same throughout the program. 
+  The readonly keyword is used for fields that can only be assigned a value during their declaration or within the constructor, making them immutable after that point but allowing for different values in different instances.
+
+3. What does a constructor do?
+  A constructor is a special method of a class that initializes a new instance of the class. It typically sets initial values for the fields and performs any other setup or initialization required when an object is created. 
+  Constructors have the same name as the class and do not have a return type.
+
+4. Why is the partial keyword useful?
+  The partial keyword allows the definition of a class, struct, or interface to be split across multiple files. This is useful when working with large projects. 
+  It allows different aspects of a class to be developed and maintained separately.
+
+5. What is a tuple?
+  A tuple is a data structure that can hold a fixed number of items, where each item can be of different types. Tuples provide a simple way to group multiple values without having to create a specific class or struct.
+
+6. What does the C# record keyword do?
+  The record keyword in C# is used to create a reference type specifically designed to hold data. Records are immutable. Their data can't be changed once they're created. 
+  They are perfect for situations where you need to store and manage data without worrying about it being modified. Two record instances with the same data are considered equal, simplifying comparisons.
+
+7. What does overloading and overriding mean?
+  
